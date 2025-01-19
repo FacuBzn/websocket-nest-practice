@@ -1,4 +1,106 @@
-:root {
+/* Estilos generales */
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  width: 100%;
+  max-width: 48rem; /* 3xl en Tailwind */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+}
+
+/* Estilos para el título principal */
+h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Estilos para el estado del servidor */
+#server-status {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  background-color: #EF4444; /* bg-red-500 */
+  color: white;
+  margin-bottom: 1rem;
+}
+
+/* Estilos para las listas (clientes y mensajes) */
+#clientes-ul,
+#messages-ul {
+  margin-bottom: 1.5rem;
+  background-color: #F3F4F6; /* bg-gray-100 */
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+/* Estilos para los elementos de la lista */
+#clientes-ul li,
+#messages-ul li {
+  color: #374151; /* text-gray-700 */
+}
+
+/* Estilos para el formulario de mensajes */
+#message-form {
+  margin-bottom: 1.5rem;
+}
+
+/* Estilos para el input de mensajes */
+#message-input  {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #D1D5DB; /* border-gray-300 */
+  border-radius: 0.375rem;
+}
+
+/*Estilo para el input del token */
+#jwt-token
+{
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  background-color: transparent;
+  color: inherit;
+}
+
+/* Estilos para el título de la sección de mensajes */
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Estilos para el contenedor principal (reemplaza la Card de shadcn/ui) */
+.main-container {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  padding: 1.5rem;
+}
+
+#btn-connect {
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  border: none;
+  background-color: #2563eb;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#btn-connect:hover {
+  background-color: #1d4ed8;
+}
+
+#server-status.connected {
+  background-color: #059669;
+}
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -94,3 +196,4 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+ */
